@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Timestamp Microservice | freeCodeCamp.org</title>
+      <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+    <h1>Timestamp Microservice</h1>
+    <input id="date-input" /><button id="date-button">Get date</button>
+
+    
+    <script>
+      const inputDate = document.getElementById("date-input");
+      const buttonDate = document.getElementById("date-button");
+
+      buttonDate.addEventListener("click", () => {
+        window.open(`api/${inputDate.value}`) ;
+      })
+    </script>
+  </body>
+</html>
